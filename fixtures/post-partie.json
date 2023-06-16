@@ -1,0 +1,14 @@
+[
+  {
+    "title": "post from json 1",
+    "body": "body 1"
+  },
+  {
+    "title": "post from json 2",
+    "body": "body 2"
+  },
+  {
+    "title": "post from json 3",
+    "body": "body 3"
+  }
+]
