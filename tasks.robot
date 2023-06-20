@@ -1,12 +1,11 @@
 *** Settings ***
 Documentation       Test robot framework with jsonplaceholder api
 
-Library             SeleniumLibrary
 Library             RequestsLibrary
 Library             Collections
 Library             JSONLibrary
 Library             OperatingSystem
-Library             userCreation
+Library             fixtures/userCreation.py
 
 
 *** Variables ***

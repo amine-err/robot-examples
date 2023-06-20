@@ -12,6 +12,8 @@ Make sure you have installed Python, pip and virtualenv
 
 ## Setup virtual environment
 
+Clone this repo and inside of its folder run the following:
+
 ```
 # Create the virtual environment
 python3 -m venv .venv
@@ -22,12 +24,15 @@ source .venv/bin/activate
 ## Install Robot and dependencies
 
 ```
-# installing robot framework
-pip install robotframework
-# installing json library for json manipulation
-pip install robotframework-jsonlibrary
-# install faker module for fake data
-pip install Faker
+# installing pipenv for dependencies management
+pip install pipenv
+# installing libraries from the Pipfile
+pipenv install
 ```
 
-If you are using robocorp extension manually installing modules and libraries isn't necessary as they are installed automatically from conda.yaml file.
+## Run the test file
+
+```
+# run test file inside venv
+pipenv run robot tasks.robot
+```

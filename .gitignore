@@ -1,6 +1,5 @@
 output/
-venv/
-env
+.venv/
 temp/
 .rpa/
 .idea/
@@ -14,7 +13,6 @@ temp/
 *.zip
 */work-items-out/*
 testrun/*
-.~lock*
 *.pkl
 .directory
 log.html
