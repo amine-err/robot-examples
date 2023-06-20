@@ -18,3 +18,7 @@ testrun/*
 log.html
 output.xml
 report.html
+__pycache__
+robot-test-docker.yml
+.dockerignore
+robot-test.Dockerfile

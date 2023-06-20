@@ -1,0 +1,26 @@
+name: robot-test
+
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install python and pip
+        run: |
+          sudo apt update
+          sudo apt install python3
+          sudo apt install python3-pip
+      - name: Install robot and depends
+        run: |
+          pip install pipenv
+          pipenv install
+      - name: Run test
+        run: pipenv run robot tasks.robot
+      - name: Archive test outputs
+        uses: actions/upload-artifact@v3
+        with:
+          name: robot-output-artifacts
+          path: output
+          retention-days: 5
